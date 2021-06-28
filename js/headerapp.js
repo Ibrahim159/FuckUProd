@@ -2,25 +2,20 @@ window.addEventListener('scroll', ()  => {
     const scrolled = window.scrollY;
     const optionMenu = document.getElementsByClassName('others-li');
 
-    console.log(scrolled);
-    if(scrolled >= 718 && window.screen.width >= 1365){
+    if(scrolled >= 718 && screen.height >=900){
         for(let i = 0; i < optionMenu.length; i++){
-            optionMenu[i].style.color = ("#000");
-            optionMenu[i].style.borderColor = ("#000");
+            optionMenu[i].classList.add('others-li_black');
         }
     }else{
-        if(scrolled >= 631 && window.screen.width <= 1200){
+        if(scrolled >= 500 && screen.height <= 800){
             for(let i = 0; i < optionMenu.length; i++){
-                optionMenu[i].style.color = ("#000");
-                optionMenu[i].style.borderColor = ("#000");
+                optionMenu[i].classList.add('others-li_black');
             }
         }else{
             for(let i = 0; i < optionMenu.length; i++){
-                optionMenu[i].style.color = ("#fff");
-                optionMenu[i].style.borderColor = ("#fff");
+                optionMenu[i].classList.remove('others-li_black');
             }
         }
     }
-    
 });
 

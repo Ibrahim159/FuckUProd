@@ -38,9 +38,15 @@
 }
 
 .others-li {
+    color: #fff;
     border: 2px solid #fff;
     font-weight: 700;
-    
+}
+
+.others-li_black{
+    color: #000;
+    border: 2px solid #000;
+    font-weight: 700;
 }
 
 .others-li:hover{
@@ -60,7 +66,6 @@
 
 .fucking-header img:hover{
     transform: rotate(360deg);
-    width: 90px;
 }
 
 /*FUCKIGN MAIN*/
